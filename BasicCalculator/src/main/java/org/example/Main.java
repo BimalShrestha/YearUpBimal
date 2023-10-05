@@ -28,6 +28,7 @@ public class Main {
         else if (possibleCalculations.equalsIgnoreCase("D")) {
             result = firstNumber / secondNumber;
         }
+        else System.out.println("Its the wrong input: ");
         return result;
 
 
