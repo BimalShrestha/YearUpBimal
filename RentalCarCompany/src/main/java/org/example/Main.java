@@ -21,7 +21,8 @@ public class Main {
         /***************************************************/
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
-        double surcharge = 0;
+        scanner.close();
+        double surcharge;
             if (age < 25) {
                 surcharge = 29.99 * numberOfDays * 0.03;
             } else {
@@ -31,8 +32,8 @@ public class Main {
         double totalCost = basicCarRental+surcharge + optionsCost(numberOfDays,tollTag,gps,roadSide);
         /***************************************************/
         System.out.printf("Your basic rental charge is %.2f," +
-                " surcharge is %.2f, optionsCost is %.2f. The total cost is %.2f for date %s" +
-                "",basicCarRental,surcharge,optionsCost(numberOfDays,tollTag,gps,roadSide),totalCost,pickupDate);
+                " surcharge is %.2f, optionsCost is %.2f. The total cost is %.2f for date %s "
+              ,basicCarRental,surcharge,optionsCost(numberOfDays,tollTag,gps,roadSide),totalCost,pickupDate);
     }
 
         public static double optionsCost(int days, boolean tTag, boolean gPs, boolean roadS){
@@ -50,4 +51,5 @@ public class Main {
             return optionCost;
 
         }
+
     }
