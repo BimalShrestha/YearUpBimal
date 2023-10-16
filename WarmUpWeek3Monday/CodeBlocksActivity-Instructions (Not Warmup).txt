@@ -1,0 +1,27 @@
+Not a warmup. In class activity.
+
+Given the sample code please perform the following tasks:
+
+Identify all of the code blocks. State which line they begin on, and which they end on.
+I'll do the first one for free:
+
+The class CodeBlocksActivity begins on line 1 and ends on line 33. 
+
+Why won't lines 22 and 23 compile? (You may remove these lines if you wish to run the program).
+
+Without running the program, what do you expect the console output to be? Be exact.
+
+cause the variable is not in the scope
+Main method:
+mainVariable = 10
+
+Inside if block:
+ifBlockVariable = 20
+
+Inside for loop:
+forLoopVariable = 0
+Inside for loop:
+forLoopVariable = 5
+
+Inside anotherMethod:
+mainVariable = 50
